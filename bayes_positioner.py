@@ -127,7 +127,7 @@ if __name__ == "__main__":
     t1_true = 0.5*(np.sqrt(2)*500/346)# can be any constant, as long as it is within the uniform distribution prior on t1
     d_true = np.linalg.norm(stations-x_true, axis=1)
     t0_true = d_true/v_true# true time of flight values
-    t_obs = t0_true-t1_true# time difference of arrival values
+    t_obs = t0_true-t1_true# true time difference of arrival values
     np.random.seed(1)
     t_obs = t_obs+0.05*np.random.randn(*t_obs.shape)# noisy observations
     
@@ -157,7 +157,7 @@ if __name__ == "__main__":
     # local map
     plt.figure(figsize=(5,5))
     plt.scatter(stations[:,0], stations[:,1], marker="^", s=80, label="Receivers")
-    plt.scatter(x_true[0], x_true[1], s=40, label="True position")
+    plt.scatter(x_true[0], x_true[1], s=40, label="True source position")
     ell = matplotlib.patches.Ellipse(xy=(mu[0], mu[1]),
               width=4*sd[0], height=4*sd[1],
               angle=0., color='black', label="Posterior ($2\sigma$)", lw=1.5)
