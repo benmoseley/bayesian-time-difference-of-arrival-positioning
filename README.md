@@ -2,6 +2,8 @@
 
 This code carries out Bayesian time-difference-of-arrival positioning using pymc3 (https://docs.pymc.io/).
 
+See my blog post here: https://benmoseley.blog/my-research/bayesian-positioning-with-pymc3/
+
 ### Task
 
 **Multilateration** is a classic positioning problem where given the arrival times at a set of receivers from a source of energy waves propagating outwards one tries to infer the location of the source.
