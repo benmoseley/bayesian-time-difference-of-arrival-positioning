@@ -2,6 +2,8 @@
 
 This code carries out Bayesian time-difference-of-arrival positioning using pymc3 (https://docs.pymc.io/).
 
+See my blog post here: https://benmoseley.blog/my-research/bayesian-positioning-with-pymc3/
+
 ### Task
 
 **Multilateration** is a classic positioning problem where given the arrival times at a set of receivers from a source of energy waves propagating outwards one tries to infer the location of the source.
@@ -14,7 +16,7 @@ Hyerbolic time-difference-of-arrival (TDOA) methods are a different in that they
 
 ### Workflow
 
-Here we treat the problem by writing a **fully probabilistic model in pymc3** and sample over its posterior distribution to infer the source location. We define the source location, observed arrival times and wave speed as random variables, assert priors over them and carry out positioning in the presence of noise and without knowing the source emission time.
+Here we treat the problem by writing a **fully probabilistic model in pymc3** and sample over its posterior distribution to infer the source location. We define the source location, observed arrival times and wave speed as random variables and assert priors over them, allowing us to solve the multilateration problem without knowing the source emission time and the wave speed and to quantify our uncertainty.
 
 ### Installation
 
@@ -33,7 +35,7 @@ pip install pymc3
 
 Below is an example use of `BayesianTDOAPositioner`, which is the main class.
 
-For more help please see the [Jupyter notebook](https://github.com/benmoseley/bayesian-time-difference-of-arrival-positioning/blob/master/Bayesian%20time-difference-of-arrival%20positioning%20with%20pymc3.ipynb).
+For more help please see the [Jupyter notebook](https://github.com/benmoseley/bayesian-time-difference-of-arrival-positioning/blob/master/Bayesian%20time-difference-of-arrival%20positioning%20with%20pymc3.ipynb) or the [blog post](https://benmoseley.blog/my-research/bayesian-positioning-with-pymc3/).
 
 ```python
 # generate some test data
