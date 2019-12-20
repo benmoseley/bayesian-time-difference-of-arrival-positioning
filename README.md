@@ -14,7 +14,7 @@ Hyerbolic time-difference-of-arrival (TDOA) methods are a different in that they
 
 ### Workflow
 
-Here we treat the problem by writing a **fully probabilistic model in pymc3** and sample over its posterior distribution to infer the source location. We define the source location, observed arrival times and wave speed as random variables and assert priors over them, allowing us to solve the multilateration problem without knowing the source emission time and the wave speed and quantify our uncertainty.
+Here we treat the problem by writing a **fully probabilistic model in pymc3** and sample over its posterior distribution to infer the source location. We define the source location, observed arrival times and wave speed as random variables and assert priors over them, allowing us to solve the multilateration problem without knowing the source emission time and the wave speed and to quantify our uncertainty.
 
 ### Installation
 
