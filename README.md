@@ -12,7 +12,7 @@ See my blog post here: https://benmoseley.blog/my-research/bayesian-positioning-
 
 The simplest way to solve this problem is to draw the locus of possible source locations for each receiver and search for where they overlap. However, when the time of arrival measurements are noisy and the wave speed is uncertain, the loci will not always overlap and this method becomes ambiguous. This method also assumes we know the wave speed and the time at which the source was emitted, which are not always known. 
 
-Hyerbolic time-difference-of-arrival (TDOA) methods are a different in that they do not need to know the source emission time, but can still **suffer from ambiguity in the presence of noise**.
+Hyperbolic time-difference-of-arrival (TDOA) methods are a different in that they do not need to know the source emission time, but can still **suffer from ambiguity in the presence of noise**.
 
 ### Workflow
 
