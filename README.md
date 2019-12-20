@@ -35,7 +35,7 @@ pip install pymc3
 
 Below is an example use of `BayesianTDOAPositioner`, which is the main class.
 
-For more help please see the [Jupyter notebook](https://github.com/benmoseley/bayesian-time-difference-of-arrival-positioning/blob/master/Bayesian%20time-difference-of-arrival%20positioning%20with%20pymc3.ipynb).
+For more help please see the [Jupyter notebook](https://github.com/benmoseley/bayesian-time-difference-of-arrival-positioning/blob/master/Bayesian%20time-difference-of-arrival%20positioning%20with%20pymc3.ipynb) or the [blog post](https://benmoseley.blog/my-research/bayesian-positioning-with-pymc3/).
 
 ```python
 # generate some test data
